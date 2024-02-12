@@ -10,8 +10,8 @@ import io.cucumber.core.backend.CucumberBackendException;
 @CucumberOptions(
     features={"src/test/resources/de/frameworktsr"},
     glue ={"stepdefinitions","pages","hooks","utils"},
-    plugin={"pretty","html:src/test/resources/de/frameworktsr/hooks/report.html"}
-)
+    plugin = { "pretty", "html:target/reports/html-report.html", "json:target/reports/json-report.json" })
+
 public class RunnerTest {
     
 }

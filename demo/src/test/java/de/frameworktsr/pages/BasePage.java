@@ -52,5 +52,24 @@ public class BasePage {
     public void checkTheSimillarities(String text1, String text2) {
         Assert.assertEquals(text1, text2);
     }
+
+    public void popUp(By locator){
+        WebElement element = driver.findElement(locator);
+        if (element instanceof RemoteWebElement) {
+            String elementId = ((RemoteWebElement) element).getId();
+            ((JavascriptExecutor) driver).executeScript("mobile: clickGesture", ImmutableMap.of(
+                "element", elementId));
+        } //else {
+           // System.out.println("Element is not a RemoteWebElement.");
+       // }
+    }
+    
+    public void addTextToField(By locator, String text) {
+        getElement(locator).sendKeys(text);
+    }
+
+    public String getTextValueOfField(By locator) {
+        return getElement(locator).getAttribute("text");
+    }
     }
     

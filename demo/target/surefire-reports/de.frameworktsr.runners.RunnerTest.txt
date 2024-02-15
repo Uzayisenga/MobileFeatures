@@ -1,26 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: de.frameworktsr.runners.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 50.951 s <<< FAILURE! - in de.frameworktsr.runners.RunnerTest
-Handle PopUp Screen Action(PopUpScreen)  Time elapsed: 26.362 s  <<< ERROR!
-io.cucumber.junit.UndefinedStepException: 
-The step 'the user enters the wifiSettings name as "Amina"' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("the user enters the wifiSettings name as {string}")
-public void the_user_enters_the_wifi_settings_name_as(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user clicks on Ok button")
-public void the_user_clicks_on_ok_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the wifiSettings should be updated.")
-public void the_wifi_settings_should_be_updated() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.336 s - in de.frameworktsr.runners.RunnerTest

@@ -15,7 +15,7 @@ public class ApiDemosPage extends BasePage {
     
     By wifiSettings = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout\r\n" + //
                 "");
-    By wifiSettingInputFieldPopup = AppiumBy.id("android:id/edittext_container");
+    By wifiSettingInputFieldPopup = AppiumBy.id("android:id/edit");
     By clickingOnOkeyButton = AppiumBy.id("android:id/button1");
     //We are going to tap on View section
     

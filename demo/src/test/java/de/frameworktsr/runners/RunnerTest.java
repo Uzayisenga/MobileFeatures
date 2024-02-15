@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features={"src/test/resources/features/"},
     glue ={"de.frameworktsr.stepdefinitions","de.frameworktsr.pages","de.frameworktsr.hooks","de.framweworktsr.utils"},
-    plugin = { "pretty", "html:target/reports/html-report.html", "json:target/reports/json-report.json" })
+    plugin = { "pretty", "html:target/reports/html-report.html", "json:target/reports/json-report.json" }, tags="@popup")
 
 public class RunnerTest {
     

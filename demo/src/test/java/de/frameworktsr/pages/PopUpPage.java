@@ -10,8 +10,7 @@ public class PopUpPage extends BasePage {
     By preferenceDependencies = AppiumBy.xpath("//android.widget.TextView[@content-desc=\"3. Preference dependencies\"]\r\n" + //
                 "");
     By preferencesDependencyWifiCheckbox = AppiumBy.id("android:id/checkbox");
-    By wifiSettings = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout\r\n" + //
-                "");
+    By wifiSettings = AppiumBy.xpath("//android.widget.TextView[@text=\"WiFi settings\"]");
     By wifiSettingInputFieldPopup = AppiumBy.id("android:id/edittext_container");
     By clickingOnOkeyButton = AppiumBy.id("android:id/button1");
 

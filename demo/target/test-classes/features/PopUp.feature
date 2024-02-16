@@ -1,5 +1,5 @@
 Feature: PopUpScreen
-@popup
+
     Scenario: Handle PopUp Screen Action
         When a user tap on preferences link
         And the user tap on preferences dependancies link

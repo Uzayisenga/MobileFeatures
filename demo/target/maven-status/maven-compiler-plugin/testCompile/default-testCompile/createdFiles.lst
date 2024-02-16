@@ -11,4 +11,5 @@ de\frameworktsr\pages\DragAndDropPage.class
 de\frameworktsr\utils\CapabilitiesManager.class
 de\frameworktsr\pages\PopUpPage.class
 de\frameworktsr\utils\ServerManager.class
+de\frameworktsr\stepdefinitions\ScrollUpAndDown.class
 de\frameworktsr\utils\GlobalParamenters.class

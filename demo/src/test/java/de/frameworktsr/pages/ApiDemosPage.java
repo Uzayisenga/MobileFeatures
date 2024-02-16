@@ -6,6 +6,7 @@ import io.appium.java_client.AppiumBy;
 import io.opentelemetry.sdk.metrics.View;
 
 public class ApiDemosPage extends BasePage {
+    
     By viewsLinkBy = AppiumBy.accessibilityId("Views");
     By dragAndDropBy = AppiumBy.xpath("//android.widget.TextView[@content-desc=\"Drag and Drop\"]");
     By preferences = AppiumBy.accessibilityId("Preference");
@@ -17,6 +18,9 @@ public class ApiDemosPage extends BasePage {
                 "");
     By wifiSettingInputFieldPopup = AppiumBy.id("android:id/edit");
     By clickingOnOkeyButton = AppiumBy.id("android:id/button1");
+    By vistViewLink = AppiumBy.id("Views");
+    By scrollDownforTextClock = AppiumBy.accessibilityId("TextClock");
+    By scrollUpForAnimation = AppiumBy.accessibilityId("Animation");
     //We are going to tap on View section
     
     public void navigateToViews() {
@@ -52,10 +56,15 @@ public class ApiDemosPage extends BasePage {
     public void clickOkBtn() {
         getElement(clickingOnOkeyButton).click();
     }
-
-
-
     
     
+
+    public void scrl(){
+        scrollupdown("TextClock");
+    }
+
+    public void scrlup(){
+        scrollupdown("Animation");
+    }
 }
  

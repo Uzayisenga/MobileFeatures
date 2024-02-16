@@ -27,6 +27,7 @@ public class BasePage {
         this.driver = new DriverManager().getDriver();
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
     }
 
     public static WebElement getElement(By locator) {
@@ -70,6 +71,11 @@ public class BasePage {
 
     public String getTextValueOfField(By locator) {
         return getElement(locator).getAttribute("text");
+    }
+    public void scrollupdown(String elementText) {
+        driver.findElement(AppiumBy.androidUIAutomator(
+                "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(" +
+                        "new UiSelector().textContains(\"" + elementText + "\"))"));
     }
     }
     

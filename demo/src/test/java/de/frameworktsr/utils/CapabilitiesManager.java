@@ -20,7 +20,7 @@ public class CapabilitiesManager {
             DesiredCapabilities capabilities = new DesiredCapabilities();
  
             // Set capabilities using params and props
-            capabilities.setCapability("uiautomator2ServerInstallTimeout", 60000); // Set timeout to 60 seconds (60000 milliseconds)
+            capabilities.setCapability("uiautomator2ServerInstallTimeout", 90000); // Set timeout to 60 seconds (60000 milliseconds)
             capabilities.setCapability("platformName", params.getPlatformName());
             capabilities.setCapability("deviceName", params.getDeviceName());
             capabilities.setCapability("systemPort", Integer.parseInt(params.getSystemPort()));

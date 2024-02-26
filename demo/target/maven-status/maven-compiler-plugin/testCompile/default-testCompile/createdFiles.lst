@@ -1,5 +1,6 @@
 de\frameworktsr\runners\RunnerTest.class
 de\frameworktsr\utils\VideoManager.class
+de\frameworktsr\stepdefinitions\RadionButtons.class
 de\frameworktsr\hooks\Hooks.class
 de\frameworktsr\stepdefinitions\DragAndDrop.class
 de\frameworktsr\utils\DriverManager.class

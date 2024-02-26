@@ -21,6 +21,10 @@ public class ApiDemosPage extends BasePage {
     By vistViewLink = AppiumBy.id("Views");
     By scrollDownforTextClock = AppiumBy.accessibilityId("TextClock");
     By scrollUpForAnimation = AppiumBy.accessibilityId("Animation");
+    By ChecktheRadionGroup = AppiumBy.accessibilityId("Radio Group");
+    By CheckingRadionButton = AppiumBy.accessibilityId("Dinner");
+    By clearingTheSelectedItem = AppiumBy.accessibilityId("Clear");
+
     //We are going to tap on View section
     
     public void navigateToViews() {
@@ -66,5 +70,21 @@ public class ApiDemosPage extends BasePage {
     public void scrlup(){
         scrollupdown("Animation");
     }
+
+    public void navigateToRadionLink(){
+    scrollupdown("Radio Group");
+    
+    getElement(ChecktheRadionGroup).click();
+    }
+
+    public void navigateToViewRadioButton(){
+        getElement(CheckingRadionButton).click();
+    }
+
+    public void clearingTheSelectedItem (){
+        getElement(clearingTheSelectedItem).click();
+    }
+
+    
 }
  

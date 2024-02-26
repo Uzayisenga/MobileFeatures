@@ -85,6 +85,5 @@ public class ApiDemosPage extends BasePage {
         getElement(clearingTheSelectedItem).click();
     }
 
-    
 }
  

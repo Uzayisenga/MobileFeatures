@@ -26,6 +26,8 @@ public class ApiDemosPage extends BasePage {
     By clearingTheSelectedItem = AppiumBy.accessibilityId("Clear");
     By tapTheGallery = AppiumBy.accessibilityId("Gallery");
     By tapOnThePhotoSwipe = AppiumBy.accessibilityId("1. Photos");
+    By theFirstImage = AppiumBy.xpath("//android.widget.ImageView[@index=0]");
+    By theSecondImage = AppiumBy.xpath("//android.widget.ImageView[@index=1]");
 
     //We are going to tap on View section
     
@@ -94,5 +96,14 @@ public class ApiDemosPage extends BasePage {
     public void tapOnThePhotoSwipeImage(){
         getElement(tapOnThePhotoSwipe).click();
     }
+
+    public void tapingOnTheFirstImage(){
+        getElement(theFirstImage).click();
+    }
+    public void tapingOnTheSecondImage(){
+        getElement(theSecondImage).click();
+    }
+
+    
 }
  

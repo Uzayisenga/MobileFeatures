@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: de.frameworktsr.runners.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 61.73 s <<< FAILURE! - in de.frameworktsr.runners.RunnerTest
-Swipe left(Swipe)  Time elapsed: 60.313 s  <<< ERROR!
-io.cucumber.java.PendingException: TODO: implement me
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 103.366 s - in de.frameworktsr.runners.RunnerTest

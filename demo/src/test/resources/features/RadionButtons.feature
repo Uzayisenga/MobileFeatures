@@ -1,5 +1,5 @@
 Feature: RadionButtons
-@RadionButtons
+
     Scenario: Select with RadionButtons
         When a user tapson views link
         And the user scrollDown to RadionGroup link

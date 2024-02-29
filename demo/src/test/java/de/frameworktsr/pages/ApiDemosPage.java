@@ -24,6 +24,8 @@ public class ApiDemosPage extends BasePage {
     By ChecktheRadionGroup = AppiumBy.accessibilityId("Radio Group");
     By CheckingRadionButton = AppiumBy.accessibilityId("Dinner");
     By clearingTheSelectedItem = AppiumBy.accessibilityId("Clear");
+    By tapTheGallery = AppiumBy.accessibilityId("Gallery");
+    By tapOnThePhotoSwipe = AppiumBy.accessibilityId("1. Photos");
 
     //We are going to tap on View section
     
@@ -85,6 +87,12 @@ public class ApiDemosPage extends BasePage {
         getElement(clearingTheSelectedItem).click();
     }
 
-    
+    public void tapTheGalleryTocheckIage(){
+        getElement(tapTheGallery).click();
+
+    }
+    public void tapOnThePhotoSwipeImage(){
+        getElement(tapOnThePhotoSwipe).click();
+    }
 }
  

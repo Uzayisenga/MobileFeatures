@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: de.frameworktsr.runners.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 103.366 s - in de.frameworktsr.runners.RunnerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.625 s - in de.frameworktsr.runners.RunnerTest

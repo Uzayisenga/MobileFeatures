@@ -28,6 +28,11 @@ public class ApiDemosPage extends BasePage {
     By tapOnThePhotoSwipe = AppiumBy.accessibilityId("1. Photos");
     By theFirstImage = AppiumBy.xpath("//android.widget.ImageView[@index=0]");
     By theSecondImage = AppiumBy.xpath("//android.widget.ImageView[@index=1]");
+    By theExapandableList = AppiumBy.accessibilityId("Expandable Lists");
+    By customsAdapter = AppiumBy.accessibilityId("1. Custom Adapter");
+    By tapingOnPeopleByLongClickin = AppiumBy.xpath("//android.widget.TextView[@text=\"People Names\"]");
+
+
 
     //We are going to tap on View section
     
@@ -104,6 +109,16 @@ public class ApiDemosPage extends BasePage {
         getElement(theSecondImage).click();
     }
 
-    
+    public void visitTheExpandableLink(){
+        getElement(theExapandableList).click();
+    }
+    public void viewCustomsAdapter(){
+        getElement(customsAdapter).click();
+    }
+
+    public void tryLongClickFunction(){
+        getElement(tapingOnPeopleByLongClickin).click();
+        
+    }
 }
  

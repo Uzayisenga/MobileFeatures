@@ -14,7 +14,6 @@ public class DragAndDrop {
 
     @When("a user tap on views link")
     public void a_user_tap_on_views_link() {
-        // Write code to navigate to the registration page
         apiDemosPage.navigateToViews();
 
     }

@@ -1,5 +1,5 @@
 Feature: DragAndDrop
-
+@RadionButtons
     Scenario: Long Click Action
         When a user tap on views link
         And the user tap on Drag and Drop link

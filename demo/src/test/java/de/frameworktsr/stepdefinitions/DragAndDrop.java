@@ -34,8 +34,7 @@ public class DragAndDrop {
     
     @Then("the message {string} should be displayed")
     public void the_message_should_be_displayed(String string) {
-    // Write code here that turns the phrase above into concrete actions
     dragdropPage.isElementDropped(string);
-    //throw new io.cucumber.java.PendingException();
+   
 }
 }

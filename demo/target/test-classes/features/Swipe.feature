@@ -1,5 +1,5 @@
 Feature: Swipe
-@RadionButtons
+
     Scenario: Swipe left
     When a user tap on views link
     And the user taps on Gallery link

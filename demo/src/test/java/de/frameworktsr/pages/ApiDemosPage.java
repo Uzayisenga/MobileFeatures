@@ -112,8 +112,9 @@ public class ApiDemosPage extends BasePage {
     public void visitTheExpandableLink(){
         getElement(theExapandableList).click();
     }
-    public void viewCustomsAdapter(){
+    public ExpandablePage viewCustomsAdapter(){
         getElement(customsAdapter).click();
+        return new ExpandablePage();
     }
 
     public void tryLongClickFunction(){

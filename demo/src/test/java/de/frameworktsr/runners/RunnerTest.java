@@ -23,10 +23,10 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = {"src/test/resources/features"},
     glue = {"de.frameworktsr.stepdefinitions","de.frameworktsr.pages","de.frameworktsr.hooks","de.framweworktsr.utils" },
-    plugin = { "pretty", "html:target/reports/html-report.html", "json:target/reports/json-report.json"},tags ="@RadionButtons",
-    monochrome = true
-   // tags = {@popuMenu}
-   )
+    plugin = { "pretty", "html:target/reports/html-report.html", "json:target/reports/json-report.json"},tags ="@RadionButtons"
+    )
+    // monochrome = true
+//    tags = {@popuMenu}
 public class RunnerTest {
  
 }

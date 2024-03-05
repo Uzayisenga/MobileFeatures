@@ -16,6 +16,7 @@ public class Hooks {
     @Before
     public void initialize(Scenario scenario) throws Exception {
         // Initialize GlobalParams (capabilities that are likely not to change)
+        System.out.println("******************************************************* IN BEFORE HOOK *******************************************");
         GlobalParamenters params = new GlobalParamenters();
         params.initializeGlobalParams();
         String appName = getAppName(scenario);
@@ -29,6 +30,8 @@ public class Hooks {
 
     @After
     public void quit(Scenario scenario) throws IOException {
+        System.out.println("******************************************************* IN BEFORE HOOK *******************************************");
+
         if(scenario.isFailed()) {
             byte[] screenshot = new DriverManager().getDriver().getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getName());

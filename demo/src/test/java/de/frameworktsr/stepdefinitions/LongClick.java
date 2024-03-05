@@ -25,8 +25,10 @@ public void the_user_do_long_click_on_names() {
 }
 @Then("the PopUp screen should be displayed")
 public void the_pop_up_screen_should_be_displayed() {
+ apiDemosPage.checkCodes();
     
-        
+    
+}      
 }
     
-}
+

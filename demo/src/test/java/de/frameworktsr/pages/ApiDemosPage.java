@@ -31,8 +31,7 @@ public class ApiDemosPage extends BasePage {
     By theExapandableList = AppiumBy.accessibilityId("Expandable Lists");
     By customsAdapter = AppiumBy.accessibilityId("1. Custom Adapter");
     By tapingOnPeopleByLongClickin = AppiumBy.xpath("//android.widget.TextView[@text=\"People Names\"]");
-
-
+    By stringNames = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.FrameLayout/android.widget.TextView");
 
     //We are going to tap on View section
     
@@ -119,6 +118,11 @@ public class ApiDemosPage extends BasePage {
 
     public void tryLongClickFunction(){
         getElement(tapingOnPeopleByLongClickin).click();
+        
+    }
+
+    public void checkCodes(){
+        getElement(stringNames);
         
     }
 }

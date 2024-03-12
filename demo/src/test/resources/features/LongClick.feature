@@ -1,5 +1,5 @@
 Feature: LongClick
-@RadionButtons
+
 Scenario: User Checks LongClick Function
 When a user tap on views link
 And the user taps exapandable list

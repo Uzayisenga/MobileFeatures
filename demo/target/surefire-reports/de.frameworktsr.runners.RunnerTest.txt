@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: de.frameworktsr.runners.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 89.047 s <<< FAILURE! - in de.frameworktsr.runners.RunnerTest
+User does AutoFillFunction(AutoFillFunction)  Time elapsed: 87.531 s  <<< ERROR!
+io.cucumber.core.exception.CucumberException: 
+Step [the user does autofill by country as"Rwanda"] is defined with 1 parameters at 'de.frameworktsr.stepdefinitions.AutoFill.the_user_does_autofill_by_country_as_rwanda(java.lang.String)'.
+However, the gherkin step has 0 arguments.
+Step text: the user does autofill by country as"Rwanda"
+

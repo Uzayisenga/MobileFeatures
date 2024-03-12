@@ -32,6 +32,11 @@ public class ApiDemosPage extends BasePage {
     By customsAdapter = AppiumBy.accessibilityId("1. Custom Adapter");
     By tapingOnPeopleByLongClickin = AppiumBy.xpath("//android.widget.TextView[@text=\"People Names\"]");
     By stringNames = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.FrameLayout/android.widget.TextView");
+    By autoComplete = AppiumBy.accessibilityId("Auto Complete");
+    By autoFill = AppiumBy.xpath("//android.widget.TextView[@content-desc=\"1. Screen Top\"]");
+    By country = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.AutoCompleteTextView");
+    //By countryList =AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.AutoCompleteTextView\r\n");
+   
 
     //We are going to tap on View section
     
@@ -124,6 +129,19 @@ public class ApiDemosPage extends BasePage {
     public void checkCodes(){
         getElement(stringNames);
         
+    }
+    public void navigateToAutoComplete(){
+        getElement(autoComplete).click();
+    }
+
+    public void naviagateToautoFill(){
+        getElement(autoFill).click();
+    }
+    public void navigateToCountry(String string){
+        getElement(country).click();
+        getElement(country).sendKeys(string);
+        getElement(country).click();
+    
     }
 }
  

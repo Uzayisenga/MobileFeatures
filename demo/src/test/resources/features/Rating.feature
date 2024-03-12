@@ -1,0 +1,7 @@
+Feature: Ratings
+@RadionButtons
+Scenario: Give Ratings Score
+When a user tap on views link
+And the user tap on rating bar
+And the user tap on rating icons
+Then the ratings score should be updated

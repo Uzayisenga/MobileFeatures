@@ -36,7 +36,9 @@ public class ApiDemosPage extends BasePage {
     By autoFill = AppiumBy.xpath("//android.widget.TextView[@content-desc=\"1. Screen Top\"]");
     By country = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.AutoCompleteTextView");
     //By countryList =AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.AutoCompleteTextView\r\n");
-   
+    By clickingRatingBar = AppiumBy.xpath("//android.widget.TextView[@content-desc=\"Rating Bar\"]");
+    By rating =AppiumBy.accessibilityId("Rating Bar");
+    By ratingsBy = AppiumBy.id("io.appium.android.apis:id/ratingbar2") ;
 
     //We are going to tap on View section
     
@@ -142,6 +144,14 @@ public class ApiDemosPage extends BasePage {
         getElement(country).sendKeys(string);
         getElement(country).click();
     
+    }
+
+    public void navigateToRatingBar(){
+        scrollupdown("Rating Bar");
+        getElement(clickingRatingBar).click();
+    }
+    public void naviagateToRatingScreen(){
+        getElement(ratingsBy).click();
     }
 }
  

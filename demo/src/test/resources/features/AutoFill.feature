@@ -1,5 +1,5 @@
 Feature: AutoFillFunction
-@RadionButtons
+
 Scenario: User does AutoFillFunction
 When a user tap on views link
 And the user taps on AutoComplete

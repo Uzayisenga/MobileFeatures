@@ -7,11 +7,15 @@ import io.appium.java_client.AppiumBy;
 
 public class RatingsPage extends BasePage {
     By ratingScores = AppiumBy.id("io.appium.android.apis:id/indicator_ratingbar");
-    public boolean isRatingsScoreUpdated() {
-        WebElement ratingsScoreElement = getElement(By.id("io.appium.android.apis:id/indicator_ratingbar")); // Replace with actual locator
-        String currentScore = ratingsScoreElement.getText(); // Get the current score from the element
-        String expectedScore = "5"; // Assuming the expected score is 5
-        return currentScore.equals(expectedScore); // Return true if the current score matches the expected score
+    static By ratingsBy = AppiumBy.id("io.appium.android.apis:id/ratingbar2") ;
+    public boolean isRatingsScoreUpdated(double expectedRating) {
+        WebElement ratingsScoreElement = getElement(By.id("io.appium.android.apis:id/indicator_ratingbar")); 
+        String currentScore = ratingsScoreElement.getText(); 
+        System.out.println("************************************************** CURRENT SCORE = " + currentScore);
+        return currentScore.equals(String.valueOf(expectedRating)); // Convert the expected rating to a string and compare
+    }
+    public static void clickOnRatingIcon() {
+       getElement(ratingsBy).click();
     }
     
 }

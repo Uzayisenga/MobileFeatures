@@ -1,5 +1,6 @@
 de\frameworktsr\runners\RunnerTest.class
 de\frameworktsr\utils\VideoManager.class
+de\frameworktsr\pages\RatingsPage.class
 de\frameworktsr\pages\AutoCompletePage.class
 de\frameworktsr\stepdefinitions\PopUp.class
 de\frameworktsr\utils\PropertyManager.class
@@ -8,13 +9,16 @@ de\frameworktsr\pages\DragAndDropPage.class
 de\frameworktsr\utils\CapabilitiesManager.class
 de\frameworktsr\utils\ServerManager.class
 de\frameworktsr\stepdefinitions\ScrollUpAndDown.class
+de\frameworktsr\stepdefinitions\Ratings.class
 de\frameworktsr\stepdefinitions\AutoFill.class
 de\frameworktsr\pages\SwipePage.class
+de\frameworktsr\stepdefinitions\DateAndTime.class
 de\frameworktsr\stepdefinitions\RadionButtons.class
 de\frameworktsr\hooks\Hooks.class
 de\frameworktsr\stepdefinitions\DragAndDrop.class
 de\frameworktsr\pages\ExpandablePage.class
 de\frameworktsr\utils\DriverManager.class
+de\frameworktsr\pages\DateWidgetPage.class
 de\frameworktsr\pages\ApiDemosPage.class
 de\frameworktsr\stepdefinitions\LongClick.class
 de\frameworktsr\pages\PopUpPage.class

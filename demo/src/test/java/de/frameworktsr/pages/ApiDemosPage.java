@@ -39,6 +39,9 @@ public class ApiDemosPage extends BasePage {
     By clickingRatingBar = AppiumBy.xpath("//android.widget.TextView[@content-desc=\"Rating Bar\"]");
     By rating =AppiumBy.accessibilityId("Rating Bar");
     By ratingsBy = AppiumBy.id("io.appium.android.apis:id/ratingbar2") ;
+    By timeWidgetBy = AppiumBy.accessibilityId("Date Widgets");
+    By dialogBy = AppiumBy.accessibilityId("1. Dialog");
+    
 
     //We are going to tap on View section
     
@@ -161,6 +164,15 @@ public class ApiDemosPage extends BasePage {
         
         getElement(ratingsBy).click();
     }
+
+    
 }
+public void  navigateToDateWidget(){
+    getElement(timeWidgetBy).click();
+}
+public void navigateToDialog(){
+    getElement(dialogBy).click();
+}
+
 }
  

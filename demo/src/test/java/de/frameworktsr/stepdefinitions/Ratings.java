@@ -22,9 +22,7 @@ public class Ratings {
 
     @When("the user tap on rating icons {double}")
     public void the_user_tap_on_rating_icons(Double rating) {
-        for (int i = 0; i < rating; i++) {
-            RatingsPage.clickOnRatingIcon(); 
-        }
+        ratingsPage.clickOnRatingIcon(rating);
     }
 
     @Then("the ratings score should be updated")

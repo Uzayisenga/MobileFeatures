@@ -150,17 +150,17 @@ public class ApiDemosPage extends BasePage {
         scrollupdown("Rating Bar");
         getElement(clickingRatingBar).click();
     }
-    public void naviagateToRatingScreen(Double rating){
+    // public void naviagateToRatingScreen(Double rating){
 
-        // detect the value of a rating and give its corresponding star
+    //     // detect the value of a rating and give its corresponding star
 
-        // rating 1.5
-        // rating 2.0
-        for (double i = 0; i < rating; i++) {
-            RatingsPage.clickOnRatingIcon(); 
+    //     // rating 1.5
+    //     // rating 2.0
+    //     for (double i = 0; i < rating; i++) {
+    //         RatingsPage.clickOnRatingIcon(); 
         
-        getElement(ratingsBy).click();
-    }
-}
+    //     getElement(ratingsBy).click();
+    // }
+//}
 }
  

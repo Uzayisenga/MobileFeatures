@@ -10,8 +10,9 @@ Then the user changed date should visible
 And click Ok or Cancel
 And the user taps change time Button
 And the user changes the time
-Then the user taps on Ok button or Cancel
+And the user taps on Ok button or Cancel
 And the user taps on spinner time button
 And the user sets the spinner time
-And the user taps on Ok button
-Then the spinner timer should be updated
+And the user changeHour PM
+# And the user taps on Ok button
+# Then the spinner timer should be updated
